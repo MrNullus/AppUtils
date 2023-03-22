@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">App Utils</string>
+
+    <!--*
+    * Strings Calculadora
+    *-->
+    <string name="str.calc.hint1">Digite o primeiro valor</string>
+    <string name="str.calc.hint2">Digite o segundo valor</string>
+
+    <!--  textos para os botões  -->
+    <string name="str.calc.bt_soma">Somar</string>
+    <string name="str.calc.bt_subtrair">Subtrair</string>
+    <string name="str.calc.bt_multiplicar">Multiplicar</string>
+    <string name="str.calc.bt_dividir">Dividir</string>
+
+
+    <!--*
+    * Strings Conversor de Temperatura
+    *-->
+    <string name="str.conversor_temp.label_hint">Converter:</string>
+    <string name="str.conversor_temp.hint">Digite a Temperatura</string>
+    <string name="str.conversor_temp.message">Para:</string>
+
+    <!--  textos para os botões  -->
+    <string name="str.conversor_temp.btn_celsiusKelvin">Celsius para Kelvin</string>
+    <string name="str.conversor_temp.btn_kelvinCelsius">Kelvin para Celsius</string>
+    <string name="str.conversor_temp.btn_celsiusFahre">Celsius para Fahrenheit</string>
+    <string name="str.conversor_temp.btn_fahreCelsius">Fahrenheit para Celsius</string>
+    <string name="str.conversor_temp.btn_kelvinFahre">Kelvin para Fahrenheit</string>
+    <string name="str.conversor_temp.btn_fahreKelvin">Fahrenheit para Kevin</string>
+</resources>

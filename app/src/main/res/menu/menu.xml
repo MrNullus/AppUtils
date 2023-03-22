@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Inicio"
+        android:title="Inicio"
+        android:icon="@drawable/ic_baseline_inicio"
+        android:enabled="true" />
+
+
+    <item
+        android:id="@+id/Calculadora"
+        android:title="Calculadora"
+        android:icon="@drawable/ic_baseline_calculadora"
+        android:enabled="true" />
+
+    <item
+        android:id="@+id/ConversorTemperatura"
+        android:title="Conversor Temperatura"
+        android:icon="@drawable/ic_baseline_conversor_temperatura"
+        android:enabled="true" />
+
+</menu>
