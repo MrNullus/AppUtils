@@ -14,6 +14,7 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
     TextView txtResultado;
     EditText edTemp;
     Button btCelsiusKelvin, btKelvinCelsius, btCelsiusFahre, btFahreCelsius, btKelvinFahre, btFahreKelvin;
+    float result = 0.0;
     String mensagem = "";
 
     @Override
@@ -39,22 +40,17 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // variaveis auxiliares
-                double K;
-                double C;
+                double celsius;
+                celsius = Float.parseFloat(edTemp.getText().toString());
 
-                if (edTemp.getText().toString().isEmpty()) {
-                    edTemp.setError("Informe uma temperatura!");
-                    edTemp.requestFocus();
-                } else {
-                    // Pegando Valor
-                    C = Float.parseFloat(edTemp.getText().toString());
-
+                if (Valida.camposObrigatorios(celsius)) 
+                {
                     // Calculo
-                    K = C + 273.15;
+                    result = ConversorTemperatura.CelsiusToKelvin(celsius);
 
-                    mensagem = "A temperatura é de "+K+"K";
+                    mensagem = "A temperatura é de "+ result +"K";
                     txtResultado.setText(mensagem);
-                }
+                } 
             }
         });
 
@@ -74,7 +70,7 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
                     K = Float.parseFloat(edTemp.getText().toString());
 
                     // Calculo
-                    C = K - 273.15;
+                    C = ;
 
                     mensagem = "A temperatura é de " + C + "C";
                     txtResultado.setText(mensagem);
@@ -122,7 +118,7 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
                     F = Float.parseFloat(edTemp.getText().toString());
 
                     // Calculo
-                    C = ( F - 32 ) * 0.55555;
+                    C = ( F - 32f ) * 0.55555f;
 
                     mensagem = "A temperatura é de " + C + "C";
                     txtResultado.setText(mensagem);
