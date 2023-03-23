@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="etec.com.gustavo.henrique.apputils">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="etec.com.gustavo.henrique.appUtils">
 
     <application
         android:allowBackup="true"
@@ -8,16 +9,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppUtils">
+        android:theme="@style/Theme.TesteMenu">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name="etec.com.gustavo.henrique.utilities.ConversorTemperaturasActivity"
+            android:exported="false" />
+        <activity
+            android:name="etec.com.gustavo.henrique.utilities.CalculadoraActivity"
+            android:exported="false" />
+        <activity
+            android:name="etec.com.gustavo.henrique.utilities.MainActivity"
+            android:exported="false"
+            tools:ignore="MissingClass" />
     </application>
 
 </manifest>
