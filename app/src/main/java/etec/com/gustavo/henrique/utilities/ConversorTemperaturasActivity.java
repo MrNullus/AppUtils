@@ -59,20 +59,15 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // variaveis auxiliares
-                double C;
-                float K;
+                float kelvin;
+                kelvin = Float.parseFloat(edTemp.getText().toString());
 
-                if (edTemp.getText().toString().isEmpty()) {
-                    edTemp.setError("Informe uma temperatura!");
-                    edTemp.requestFocus();
-                } else {
-                    // Pegando Valor
-                    K = Float.parseFloat(edTemp.getText().toString());
-
+                if (Valida.camposObrigatorios(kelvin)) 
+                {
                     // Calculo
-                    C = ;
+                    result = ConversorTemperatura.KelvinToCelsius(kelvin);
 
-                    mensagem = "A temperatura é de " + C + "C";
+                    mensagem = "A temperatura é de "+ result +"C";
                     txtResultado.setText(mensagem);
                 }
             }
@@ -83,20 +78,15 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // variaveis auxiliares
-                float C;
-                double F;
+                float celsius;
+                celsius = Float.parseFloat(edTemp.getText().toString());
 
-                if (edTemp.getText().toString().isEmpty()) {
-                    edTemp.setError("Informe uma temperatura!");
-                    edTemp.requestFocus();
-                } else {
-                    // Pegando Valor
-                    C = Float.parseFloat(edTemp.getText().toString());
-
+                if (Valida.camposObrigatorios(celsius)) 
+                {
                     // Calculo
-                    F = ( C * 1.8 ) + 32;
+                    result = ConversorTemperatura.CelsiusToFahre(celsius);
 
-                    mensagem = "A temperatura é de " + F + "F";
+                    mensagem = "A temperatura é de "+ result +"F";
                     txtResultado.setText(mensagem);
                 }
             }
@@ -107,20 +97,15 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // variaveis auxiliares
-                double C;
-                Float F;
+                float fahre;
+                fahre = Float.parseFloat(edTemp.getText().toString());
 
-                if (edTemp.getText().toString().isEmpty()) {
-                    edTemp.setError("Informe uma temperatura!");
-                    edTemp.requestFocus();
-                } else {
-                    // Pegando Valor
-                    F = Float.parseFloat(edTemp.getText().toString());
-
+                if (Valida.camposObrigatorios(fahre)) 
+                {
                     // Calculo
-                    C = ( F - 32f ) * 0.55555f;
+                    result = ConversorTemperatura.FahreToCelsius(fahre);
 
-                    mensagem = "A temperatura é de " + C + "C";
+                    mensagem = "A temperatura é de "+ result +"C";
                     txtResultado.setText(mensagem);
                 }
             }
@@ -131,20 +116,15 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // variaveis auxiliares
-                float K;
-                double F;
+                float kelvin;
+                kelvin = Float.parseFloat(edTemp.getText().toString());
 
-                if (edTemp.getText().toString().isEmpty()) {
-                    edTemp.setError("Informe uma temperatura!");
-                    edTemp.requestFocus();
-                } else {
-                    // Pegando Valor
-                    K = Float.parseFloat(edTemp.getText().toString());
-
+                if (Valida.camposObrigatorios(kelvin)) 
+                {
                     // Calculo
-                    F = (( K - 273.15 ) * 1.8 ) + 32;
+                    result = ConversorTemperatura.KelvinToFahre(kelvin);
 
-                    mensagem = "A temperatura é de " + F + "F";
+                    mensagem = "A temperatura é de "+ result +"F";
                     txtResultado.setText(mensagem);
                 }
             }
@@ -155,20 +135,15 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // variaveis auxiliares
-                float F;
-                double K;
+                float fahre;
+                fahre = Float.parseFloat(edTemp.getText().toString());
 
-                if (edTemp.getText().toString().isEmpty()) {
-                    edTemp.setError("Informe uma temperatura!");
-                    edTemp.requestFocus();
-                } else {
-                    // Pegando Valor
-                    F = Float.parseFloat(edTemp.getText().toString());
-
+                if (Valida.camposObrigatorios(fahre)) 
+                {
                     // Calculo
-                    K = ((F - 32) * 0.55555) + 273.15;
+                    result = ConversorTemperatura.FahreToKelvin(fahre);
 
-                    mensagem = "A temperatura é de " + K + "K";
+                    mensagem = "A temperatura é de "+ result +"K";
                     txtResultado.setText(mensagem);
                 }
             }

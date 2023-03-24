@@ -30,7 +30,7 @@ public class CalculadoraActivity extends AppCompatActivity {
     btnDividir   = findViewById(R.id.btnDividir);
 
 
-     btnSoma.setOnClickListener(new View.OnClickListener() {
+    btnSoma.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) 
         {
@@ -51,6 +51,7 @@ public class CalculadoraActivity extends AppCompatActivity {
             }
         }
     });
+
 
     btnSubtrair.setOnClickListener(new View.OnClickListener() {
         @Override
@@ -74,7 +75,9 @@ public class CalculadoraActivity extends AppCompatActivity {
         }
     });
 
+
     btnMult.setOnClickListener(new View.OnClickListener() {
+    
         @Override
         public void onClick(View view) 
         {
@@ -95,7 +98,8 @@ public class CalculadoraActivity extends AppCompatActivity {
             }
         }
     });
-     
+    
+
     btnDividir.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) 

@@ -2,14 +2,33 @@
     <string name="app_name">App Utils</string>
 
 
-    <!-- TextViews -->
+    <!-- Activity Main -->
     <string name="str.txt.inicio">Clique em uma de nossas utilidades!</string>
 
 
+    <!-- Activity Conversor Temperatura -->
+    <string name="str.label_hint">Converter:</string>
+    <string name="str.cnversr_temp.hint">Digite a Temperatura</string>
+    <string name="str.txt.cnversr_temp">Para:</string>
+
+
+    <!-- Activity Calculadora -->
+    <string name="str.calculadora.hint1">Digite o primeiro valor:</string>
+    <string name="str.calculadora.hint2">Digite o segundo valor:</string>
+
+
     <!-- Buttons -->
-    <string name="str_btn.acessar_inicio">Inicicio</string>
+    <string name="str.btn.acessar_inicio">Inicicio</string>
     <string name="str.btn.acessar_calculadora">Calculadora</string>
     <string name="str.btn.acessar_conversor_temp">Conversor Temperatura</string>
-
-
+    <string name="str.btn.CelsiusKelvin">Celsius para Kelvin</string>
+    <string name="str.btn.KelvinCelsius">Kelvin para Celsius</string>
+    <string name="str.btn.CelsiusFahre">Celsius para Fahrenheit</string>
+    <string name="str.btn.FahreCelsius">Fahrenheit para Celsius</string>
+    <string name="str.btn.KelvinFahre">Kelvin para Fahrenheit</string>
+    <string name="str.btn.FahreKelvin">Fahrenheit para Kevin</string>
+    <string name="str.btn.soma">Somar</string>
+    <string name="str.btn.subtrair">Subtrair</string>
+    <string name="str.btn.mult">Multiplicar</string>
+    <string name="str.btn.dividir">Dividir</string>
 </resources>

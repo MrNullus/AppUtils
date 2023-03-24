@@ -1,4 +1,4 @@
-package etec.com.gustavo.henrique.apputils;
+package etec.com.gustavo.henrique.appUtils;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("etec.com.gustavo.henrique.apputils", appContext.getPackageName());
+        assertEquals("etec.com.gustavo.henrique.testemenu", appContext.getPackageName());
     }
 }

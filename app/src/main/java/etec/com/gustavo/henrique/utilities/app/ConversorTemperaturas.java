@@ -12,7 +12,7 @@ public class ConversorTemperatura {
 	 * @return         [description]
 	 */
 	public static float CelsiusToKelvin(float celsius) {
-		return celsius + 273.15;
+		return celsius + 273.15f;
 	}
 	
 	/**
@@ -21,7 +21,7 @@ public class ConversorTemperatura {
 	 * @return         [description]
 	 */
 	public static float CelsiusToFahre(float celsius) {
-		return celsius - 273.15;
+		return (celsius * 1.8f) + 32f;
 	}
 
 
@@ -32,7 +32,7 @@ public class ConversorTemperatura {
 	 * @return        [description]
 	 */
 	public static float KelvinToCelsius(float kelvin) {
-		return ( kelvin * 1.8f ) + 32f;
+		return kelvin - 273.15f;
 	}
 
 	/**
@@ -61,7 +61,7 @@ public class ConversorTemperatura {
 	 * @return       [description]
 	 */
 	public static float FahreCelsius(float fahre) {
-		return ( fahre - 32f ) * 0.55555f;
+		return (fahre - 32f) * 0.55555f;
 	}
 
 }

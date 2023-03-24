@@ -1,4 +1,4 @@
-package etec.com.gustavo.henrique.apputils;
+package etec.com.gustavo.henrique.appUtils;
 
 import org.junit.Test;
 

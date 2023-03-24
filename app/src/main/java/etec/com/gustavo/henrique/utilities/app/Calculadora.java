@@ -12,7 +12,7 @@ public class Calculadora {
 	 * @return        [description]
 	 */
 	protected float somar(float valorA, float valorB) {
-
+		return valorA + valorB;
 	}
 
 	/**
@@ -22,7 +22,7 @@ public class Calculadora {
 	 * @return        [description]
 	 */
 	protected float subtrair(float valorA, float valorB) {
-		
+		return valorA - valorB;
 	}
 
 	/**
@@ -32,7 +32,7 @@ public class Calculadora {
 	 * @return        [description]
 	 */
 	protected float multiplicar(float valorA, float valorB) {
-		
+		return valorA * valorB; 
 	}
 
 	/**
@@ -42,7 +42,7 @@ public class Calculadora {
 	 * @return        [description]
 	 */
 	protected float dividir(float valorA, float valorB) {
-		
+		return valorA / valorB;
 	}
 
 

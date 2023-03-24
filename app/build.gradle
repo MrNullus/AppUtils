@@ -6,7 +6,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "etec.com.gustavo.henrique.utilities"
+        applicationId "etec.com.gustavo.henrique.appUtils"
         minSdk 21
         targetSdk 33
         versionCode 1
