@@ -38,9 +38,9 @@ public class CalculadoraActivity extends AppCompatActivity {
     edtValorUm   = findViewById(R.id.edtValor1);
     edtValorDois = findViewById(R.id.edtValor2);
     
-    btnSoma      = findViewById(R.id.btnSoma);
+    btnSoma      = findViewById(R.id.btnSomar);
     btnSubtrair  = findViewById(R.id.btnSubtrair);
-    btnMult      = findViewById(R.id.btnMult);
+    btnMult      = findViewById(R.id.btnMultiplicar);
     btnDividir   = findViewById(R.id.btnDividir);
 
 
@@ -69,7 +69,7 @@ public class CalculadoraActivity extends AppCompatActivity {
 
     btnSubtrair.setOnClickListener(new View.OnClickListener() {
         @Override
-        public void onClick(View view) 
+        public void onClick(View view)
         {
             float valor1, valor2, resultado;
 
