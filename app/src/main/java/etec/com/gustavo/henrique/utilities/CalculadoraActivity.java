@@ -1,15 +1,28 @@
 package etec.com.gustavo.henrique.utilities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import etec.com.gustavo.henrique.utilities.Calculadora;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+import etec.com.gustavo.henrique.utilities.ConversorTemperatura;
+import etec.com.gustavo.henrique.appUtils.R;
+
 
 public class CalculadoraActivity extends AppCompatActivity {
 
-    Calculadora calc = new Calculadora();
+    Calculadora calc = new etec.com.gustavo.henrique.utilities.Calculadora();
 
     TextView txtResultado;
     Button btnSoma, btnSubtrair, btnMult, btnDividir;
@@ -24,7 +37,7 @@ public class CalculadoraActivity extends AppCompatActivity {
     edtValorUm   = findViewById(R.id.edtValor1);
     edtValorDois = findViewById(R.id.edtValor2);
     
-    btnSoma      = findViewById(R.id.btnSoma);
+    btnSoma      = findViewById(R.id.btnSoma)throws ;
     btnSubtrair  = findViewById(R.id.btnSubtrair);
     btnMult      = findViewById(R.id.btnMult);
     btnDividir   = findViewById(R.id.btnDividir);

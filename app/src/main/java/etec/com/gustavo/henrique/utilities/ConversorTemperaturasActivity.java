@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+import etec.com.gustavo.henrique.utilities.ConversorTemperatura;
+import etec.com.gustavo.henrique.appUtils.R;
 
 
 public class ConversorTemperaturasActivity extends AppCompatActivity {
@@ -14,7 +17,7 @@ public class ConversorTemperaturasActivity extends AppCompatActivity {
     TextView txtResultado;
     EditText edTemp;
     Button btCelsiusKelvin, btKelvinCelsius, btCelsiusFahre, btFahreCelsius, btKelvinFahre, btFahreKelvin;
-    float result = 0.0;
+    float result = 0.0F;
     String mensagem = "";
 
     @Override
