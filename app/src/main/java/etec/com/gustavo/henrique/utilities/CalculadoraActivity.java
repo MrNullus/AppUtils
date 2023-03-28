@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import etec.com.gustavo.henrique.utilities.Calculadora;
+import etec.com.gustavo.henrique.utilities.Valida;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,7 +38,7 @@ public class CalculadoraActivity extends AppCompatActivity {
     edtValorUm   = findViewById(R.id.edtValor1);
     edtValorDois = findViewById(R.id.edtValor2);
     
-    btnSoma      = findViewById(R.id.btnSoma)throws ;
+    btnSoma      = findViewById(R.id.btnSoma);
     btnSubtrair  = findViewById(R.id.btnSubtrair);
     btnMult      = findViewById(R.id.btnMult);
     btnDividir   = findViewById(R.id.btnDividir);
@@ -52,7 +53,7 @@ public class CalculadoraActivity extends AppCompatActivity {
             valor1 = Float.parseFloat(edtValorUm.getText().toString());
             valor2 = Float.parseFloat(edtValorDois.getText().toString());
 
-                if (Valida.camposObrigatorios(valor1, valor2)) 
+                if (Valida.camposObrigatorios(valor1, valor2))
             {
                 resultado = calc.realizarOperacao(
                     valor1,
